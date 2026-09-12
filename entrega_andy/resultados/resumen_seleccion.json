@@ -1,0 +1,24 @@
+{
+  "semilla": 2026,
+  "k_evaluados": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    15
+  ],
+  "mejor_k": 1,
+  "muestras_entrenamiento": 2555,
+  "muestras_validacion": 851,
+  "muestras_prueba": 851,
+  "muestras_modelo_final": 3406,
+  "criterio_seleccion": "Mayor F1 macro de validación; luego exactitud; luego menor k.",
+  "metricas_prueba": {
+    "exactitud": 0.954171562867215,
+    "precision_macro": 0.9561180415043063,
+    "recall_macro": 0.9537747977893927,
+    "f1_macro": 0.9526404636606091
+  }
+}
