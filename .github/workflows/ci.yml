@@ -1,24 +1,75 @@
-name: CI
+name: Reproducibilidad
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'rapido comprueba funcionamiento; completo ejecuta los experimentos largos'
+        type: choice
+        options: [rapido, completo]
+        default: rapido
+
+permissions:
+  contents: read
+
+env:
+  OMP_NUM_THREADS: '2'
+  OPENBLAS_NUM_THREADS: '2'
+  MKL_NUM_THREADS: '2'
+  MPLBACKEND: Agg
 
 jobs:
-  test-notebook:
+  reproducibility:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-      - name: Install dependencies
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/data/REHAB/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.3'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-lock.txt
+      - name: Instalar entorno fijado
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Execute notebook
+          python -m pip install -r requirements.txt
+          python -m pip check
+      - name: Validar datos, notebooks y separación de grupos
         run: |
-          python -m nbconvert --to notebook --execute eda_rehab_entrenamiento.ipynb --ExecutePreprocessor.timeout=600
+          python -m rehab validate
+          python -m unittest discover -s tests -v
+      - name: Comparación rápida
+        run: python -m rehab selection --mode rapido --output reports/runs/ci-selection
+      - name: Búsqueda rápida y exportación de prueba
+        run: |
+          python -m rehab search --mode rapido --output reports/runs/ci-search
+          python -m rehab fit-final --run reports/runs/ci-search
+      - name: Reconstrucción y experimentos completos (solo solicitud manual)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'completo'
+        run: |
+          git sparse-checkout add --no-cone '/data/REHAB/Rehab_exercise/d02_processed_data/'
+          python -m rehab rebuild
+          python -m nbconvert --to notebook --execute eda_rehab_entrenamiento.ipynb --ExecutePreprocessor.timeout=600 --output-dir reports/runs
+          python -m rehab selection --mode completo --output reports/runs/full-selection
+          python -m rehab search --mode completo --output reports/runs/full-search
+          python -m rehab fit-final --run reports/runs/full-search
+      - name: Conservar métricas y avances incluso si hay errores
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rehab-${{ github.run_id }}
+          path: |
+            reports/runs/
+            models/
+          if-no-files-found: warn

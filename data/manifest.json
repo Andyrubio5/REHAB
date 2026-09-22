@@ -1,0 +1,195 @@
+{
+  "source_commit": "5178e321434eb2170907f1197f0815a36a824d5b",
+  "files": [
+    {
+      "path": "data/df_final.csv",
+      "role": "published_csv",
+      "sha256": "b65810f0e59c835ad1eb8988b7753bf811e6e8d50682cd673f1258eee87d2200",
+      "bytes": 43223457
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/000_1.npy",
+      "role": "processed_input",
+      "sha256": "61f78c09cf2a698dd9d634f3bdaecc6384cc1d171cacff46ba844dd606a1a974",
+      "bytes": 9799808
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/000_2.npy",
+      "role": "processed_input",
+      "sha256": "eda02461c41b63e5d5fbc07e293815e86593314e91f93b28a6a40a9203d56213",
+      "bytes": 9799808
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/001_1.npy",
+      "role": "processed_input",
+      "sha256": "607cb617e0537f51acf3abddef4cade2a4d53215fbb833d42df6160f3e68c482",
+      "bytes": 8955008
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/001_2.npy",
+      "role": "processed_input",
+      "sha256": "3dd205be65cc8f08e3d8ef24fbbe66e241dcc08ecd3afe36a625e605b046ebb7",
+      "bytes": 8955008
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/002_1.npy",
+      "role": "processed_input",
+      "sha256": "84cc7bce2de88c7a457ba3e62f453648fe8ad0c86b9c394853b23e921dd26021",
+      "bytes": 11278208
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/002_2.npy",
+      "role": "processed_input",
+      "sha256": "92c428d237ec06ef03a74b7276d094ff71c0728974d48fd15806e26f62d83c28",
+      "bytes": 11278208
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/003_1.npy",
+      "role": "processed_input",
+      "sha256": "8d3f013372f450ec2a5b95b89b6731bd34db1cc60366991f04dd18afd028b167",
+      "bytes": 10560128
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/003_2.npy",
+      "role": "processed_input",
+      "sha256": "2926d708b3bb8e5535d0b38422bfc015c309902d64ae7b7453f1a3df6346320a",
+      "bytes": 10560128
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/004_1.npy",
+      "role": "processed_input",
+      "sha256": "216de2f659092b5860a5fe10a7095677c000f9dd9563d2a882a553550ffacbff",
+      "bytes": 12123008
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/004_2.npy",
+      "role": "processed_input",
+      "sha256": "02c5794ca466f9fa05f0e7ab9f27d82616a0e25a55ed63d8bd55fac891af2ee8",
+      "bytes": 12123008
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/005_1.npy",
+      "role": "processed_input",
+      "sha256": "8e3402a70959f9ece3634a6e3cf8de856fc713d4bc8fb30bce3130f9bf7efc2b",
+      "bytes": 12376448
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/005_2.npy",
+      "role": "processed_input",
+      "sha256": "9f977d0633476a17981c86a294ac1e093ce036cefdcd89ece218f6d13a3308f8",
+      "bytes": 12376448
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/006_1.npy",
+      "role": "processed_input",
+      "sha256": "39fe578236502a0af1293c45f07e7582c2d22b654697780cad2d913f21345652",
+      "bytes": 10982528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/006_2.npy",
+      "role": "processed_input",
+      "sha256": "e0b84b288fd7d8cd503fe673ff5941f6d62b177f13befe1029d5cc2230768c64",
+      "bytes": 10982528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/007_1.npy",
+      "role": "processed_input",
+      "sha256": "c03d91516d3d148dc899cf1da861e793d549d8411fa093b9ea3f11fa6bea3447",
+      "bytes": 16262528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/007_2.npy",
+      "role": "processed_input",
+      "sha256": "ced3aedd78f53e37350a9a09cf3d9b6516f0406d11f895a29e440178af370441",
+      "bytes": 16262528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/008_1.npy",
+      "role": "processed_input",
+      "sha256": "77664ad02d0e0990fc5fc54b28aabc72826014e15e3e3908069fe25aa05e2512",
+      "bytes": 12629888
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/008_2.npy",
+      "role": "processed_input",
+      "sha256": "6dfbe09812dce9351db9014b8dee9acb80dd459ae9d272b1ea90769bf1f2f464",
+      "bytes": 12629888
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/009_1.npy",
+      "role": "processed_input",
+      "sha256": "3dc803df1a905bd68be45ffbfb874e3bf72df989cd6e7947e2f2baeab2b972cb",
+      "bytes": 12967808
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/009_2.npy",
+      "role": "processed_input",
+      "sha256": "58cbba23933b08d394251fc2c6093d942552deb7e463c3f0804b1782c4418a4d",
+      "bytes": 12967808
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/010_1.npy",
+      "role": "processed_input",
+      "sha256": "c6681917f2d4842d8223fd20bcf85d45cf5d862bf38b6de43ffdd40f1977247f",
+      "bytes": 13136768
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/010_2.npy",
+      "role": "processed_input",
+      "sha256": "f24593edaaa0d24f2011ddc5ffeb56bf5d6511a2a294dab75c709ab006291b78",
+      "bytes": 13136768
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/011_1.npy",
+      "role": "processed_input",
+      "sha256": "966e64aa6b4abfe983948aa782baf6bf2a8c8f15573431a53b6f052a1a6e28e4",
+      "bytes": 9926528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/011_2.npy",
+      "role": "processed_input",
+      "sha256": "2896b5adee6dc150f9f9804e11eb5994b065be2fb150e3e3d989b35aee6b8a52",
+      "bytes": 9926528
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/012_1.npy",
+      "role": "processed_input",
+      "sha256": "fc683cac9ad6772d15859d7de4d7caa17f235aa9049038ac9062047be4f2198d",
+      "bytes": 12376448
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/012_2.npy",
+      "role": "processed_input",
+      "sha256": "af72504fd5fa727d98abee2d03d3ccae2602960eb3ee8a4cfad1e934442fda57",
+      "bytes": 12376448
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/013_1.npy",
+      "role": "processed_input",
+      "sha256": "0b8febbee2b6b9a3feb941d9a75ce764d111ecae5333ca63e28d954ce2bee21a",
+      "bytes": 13221248
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/013_2.npy",
+      "role": "processed_input",
+      "sha256": "b01e5aeb775ccde00c9a5f68b76884db6cf51d634e48591e23fe2acb83fc7cc3",
+      "bytes": 13221248
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/015_1.npy",
+      "role": "processed_input",
+      "sha256": "d46571cbd13208711ee9514a82850e5bb605aa9b4f877dc8483592cd7389e0b6",
+      "bytes": 13221248
+    },
+    {
+      "path": "data/REHAB/Rehab_exercise/d02_processed_data/015_2.npy",
+      "role": "processed_input",
+      "sha256": "50c790672161c532f1928d38873288f29b16aa3312a90eb14a57158fcf4dfae5",
+      "bytes": 13221248
+    }
+  ],
+  "excluded": {
+    "movement": "014",
+    "reason": "014_1.npy tiene una cabecera alterada; se excluyen ambos sensores del movimiento."
+  }
+}

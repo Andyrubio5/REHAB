@@ -48,8 +48,7 @@ hypothesis/
 .ipynb_checkpoints/
 output/
 
-# pyenv
-.python-version
+# La versión de Python se versiona para reproducibilidad.
 
 # envs
 env/
@@ -63,3 +62,10 @@ venv.bak/
 
 # Mac
 .DS_Store
+
+# Entorno y artefactos generados (métricas de referencia sí se versionan)
+.venv/
+models/
+modelos/
+reports/runs/
+*.nbconvert.ipynb

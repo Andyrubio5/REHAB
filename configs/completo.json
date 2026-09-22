@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "smoke_test": false,
+  "groups_per_class": null,
+  "outer_splits": 5,
+  "inner_splits": 4,
+  "n_iter": 30,
+  "jobs": 1,
+  "threads": 2,
+  "selection_models": ["Dummy", "Extra Trees", "Random Forest", "HistGradientBoosting", "SVM RBF", "KNN", "Regresión logística", "LDA regularizado", "MLP"],
+  "search_models": ["HistGradientBoosting", "Extra Trees", "Random Forest"]
+}

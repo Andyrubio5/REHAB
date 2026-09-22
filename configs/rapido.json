@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "smoke_test": true,
+  "groups_per_class": 8,
+  "outer_splits": 3,
+  "inner_splits": 2,
+  "n_iter": 2,
+  "jobs": 1,
+  "threads": 2,
+  "selection_models": ["Dummy", "HistGradientBoosting", "Extra Trees", "Random Forest"],
+  "search_models": ["HistGradientBoosting", "Extra Trees", "Random Forest"]
+}
